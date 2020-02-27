@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="467b00f2-ad33-4315-b3b1-4e2ed1973a43" name="Default Changelist" comment="" />
+    <list default="true" id="467b00f2-ad33-4315-b3b1-4e2ed1973a43" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/functions/Exercise1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/functions/Exercise1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/generics/worksheet1.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/generics/worksheet1.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/End$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/End$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/End.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/End.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Exercise1$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Exercise1$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/IntList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/IntList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Pair$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Pair$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/generics/worksheet1.sc" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/generics/worksheet1.sc" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +34,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1WZ6Mr5EEx0T2ToCBAAs2lNpBCP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -39,39 +57,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Generics3">
+  <component name="RunManager" selected="Application.Exercise1 (1)">
+    <configuration name="Exercise1 (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="generics.Exercise1" />
+      <module name="EssentialScala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Exercise1" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="functions.Exercise1" />
       <module name="EssentialScala" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="functions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exercise2 (1)" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="extendedexamples.Exercise2" />
-      <module name="EssentialScala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="extendedexamples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Generics1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="generics.Generics1" />
-      <module name="EssentialScala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="generics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,13 +110,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Generics4WithFold" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="generics.Generics4WithFold" />
+      <module name="EssentialScala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Generics3" />
+        <item itemvalue="Application.Exercise1 (1)" />
+        <item itemvalue="Application.Generics4WithFold" />
         <item itemvalue="Application.Exercise1" />
+        <item itemvalue="Application.Generics3" />
         <item itemvalue="Application.Generics2" />
-        <item itemvalue="Application.Generics1" />
-        <item itemvalue="Application.Exercise2 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -166,5 +184,18 @@
       <updated>1579344724688</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
