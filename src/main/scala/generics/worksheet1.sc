@@ -15,4 +15,5 @@ object Sum {
 }
 
 val fn = (Sum.sum _)
-fn(1,2)
+fn(1, 2)
+

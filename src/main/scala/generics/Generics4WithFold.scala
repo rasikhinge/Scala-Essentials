@@ -5,7 +5,7 @@ sealed trait LinkedList2[A] {
   def fold[T](end: T, f: (A, T) => T): T = {
     this match {
       case End2() => end
-      case Pair2(head, tail) => f(head, tail.fold(end, f)) // (Int, T)=> T  = head + tail.fold OR  head * tail.fold OR  Pair(head, tail.fold) etc
+      case Pair2(head, tail) => f(head, tail.fold(end, f)) // (Int, T) => T  = head + tail.fold OR  head * tail.fold OR  Pair(head, tail.fold) etc
     }
   }
 }

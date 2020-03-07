@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="467b00f2-ad33-4315-b3b1-4e2ed1973a43" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/functions/Exercise1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/functions/Exercise1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/generics/Generics4WithFold.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/generics/Generics4WithFold.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/generics/worksheet1.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/generics/worksheet1.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/End$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/End$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/End.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/End.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Exercise1$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Exercise1$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/IntList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/IntList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Pair$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Pair$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/functions/Pair.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/generics/worksheet1.sc" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/generics/worksheet1.sc" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,9 +51,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Exercise1 (1)">
-    <configuration name="Exercise1 (1)" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="generics.Exercise1" />
+  <component name="RunManager" selected="Application.MaybeMap">
+    <configuration name="Exercise2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="generics.Exercise2" />
       <module name="EssentialScala" />
       <extension name="coverage">
         <pattern>
@@ -71,21 +65,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exercise1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="functions.Exercise1" />
-      <module name="EssentialScala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="functions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Generics2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="generics.Generics2" />
+    <configuration name="Exercise3" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="generics.Exercise3" />
       <module name="EssentialScala" />
       <extension name="coverage">
         <pattern>
@@ -97,8 +78,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Generics3" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="generics.Generics3" />
+    <configuration name="Generics4" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="generics.Generics4" />
       <module name="EssentialScala" />
       <extension name="coverage">
         <pattern>
@@ -110,12 +91,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Generics4WithFold" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="generics.Generics4WithFold" />
+    <configuration name="ListMap" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="mapFlatmap.ListMap" />
       <module name="EssentialScala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="generics.*" />
+          <option name="PATTERN" value="mapFlatmap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaybeMap" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="mapFlatmap.MaybeMap" />
+      <module name="EssentialScala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapFlatmap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Exercise1 (1)" />
-        <item itemvalue="Application.Generics4WithFold" />
-        <item itemvalue="Application.Exercise1" />
-        <item itemvalue="Application.Generics3" />
-        <item itemvalue="Application.Generics2" />
+        <item itemvalue="Application.MaybeMap" />
+        <item itemvalue="Application.ListMap" />
+        <item itemvalue="Application.Exercise3" />
+        <item itemvalue="Application.Exercise2" />
+        <item itemvalue="Application.Generics4" />
       </list>
     </recent_temporary>
   </component>
