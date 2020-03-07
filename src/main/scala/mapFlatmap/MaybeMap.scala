@@ -36,5 +36,9 @@ object MaybeMap {
     println(emptyMap)
     println(maybeMaybeMap)
     println(maybeFlatMap)
+
+    val maybeList: List[Maybe[Int]] = List(Full(3), Full(2), Full(1))
+    val result = maybeList.map(x => x.flatMap[Int] (v => if (v % 2 == 0) Full(v) else Empty()))
+    println(result)
   }
 }
