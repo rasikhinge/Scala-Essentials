@@ -14,6 +14,13 @@ sealed trait LinkedList[A] {
       case Node(head, tail) => NodeFn(head, tail.fold(endFn, NodeFn))
     }
   }
+
+  def flatMap[B](f: A => LinkedList[B]) : LinkedList[B] = {
+    this match {
+      case End() => End[B]()
+      case Node(head,tail) => f(head) 
+    }
+  }
 }
 
 final case class End[A]() extends LinkedList[A]

@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467b00f2-ad33-4315-b3b1-4e2ed1973a43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/mapFlatmap/Exercise2.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/mapFlatmap/MaybeMap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/mapFlatmap/MaybeMap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Empty$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Empty$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Empty.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Empty.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Full$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Full$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Full.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Full.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Maybe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Maybe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/MaybeMap$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/MaybeMap$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/mapFlatmap/ListMap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/mapFlatmap/ListMap.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/End$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/End$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/End.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/End.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/ListMap$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/ListMap$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Node$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Node$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/mapFlatmap/Node.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +35,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.scala" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -59,13 +55,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Exercise2 (1)">
-    <configuration name="Exercise1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="mapFlatmap.Exercise1" />
+  <component name="RunManager" selected="Application.Exercise2">
+    <configuration name="Exercise1 (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="collections.Exercise1" />
       <module name="EssentialScala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mapFlatmap.*" />
+          <option name="PATTERN" value="collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exercise3" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="generics.Exercise3" />
+    <configuration name="Exercise2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="collections.Exercise2" />
       <module name="EssentialScala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="generics.*" />
+          <option name="PATTERN" value="collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Exercise2" />
+        <item itemvalue="Application.Exercise1 (1)" />
+        <item itemvalue="Application.ListMap" />
         <item itemvalue="Application.Exercise2 (1)" />
         <item itemvalue="Application.MaybeMap" />
-        <item itemvalue="Application.Exercise1" />
-        <item itemvalue="Application.ListMap" />
-        <item itemvalue="Application.Exercise3" />
       </list>
     </recent_temporary>
   </component>
