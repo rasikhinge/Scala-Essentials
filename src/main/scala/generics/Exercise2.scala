@@ -17,7 +17,7 @@ object Exercise2 {
     val sum1: Sum[Int, String] = Right("Good Night")
 
     println(sum)
-    println(sum1)
+    println(sum1.fold(l => false, r => true))
 
     val result = sum1 match {
       case Left(x) => x.toString

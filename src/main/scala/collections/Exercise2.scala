@@ -34,25 +34,122 @@ object Exercise2 {
 
     val filterDirectorsByYearAndNoOfFilms = directors.filter(d => d.yearOfBirth < 1975 && d.films.length > 4)
     println(filterDirectorsByYearAndNoOfFilms)
+    println("==========================================================================================")
 
     val filterByAge = directors.filter(d => d.yearOfBirth < 1975)
     val filterByNoOfFilms = directors.filter(d => d.films.length > 4)
     val result = filterByAge.filter(d => filterByNoOfFilms.contains(d))
     println(result)
+    println("==========================================================================================")
 
     val ascending = true
     val orderByYear = if (ascending) directors.sortWith((d1, d2) => d1.yearOfBirth < d2.yearOfBirth) else directors.sortWith((d1, d2) => d1.yearOfBirth > d2.yearOfBirth)
     println(orderByYear)
+    println("==========================================================================================")
 
-    val comparator: (Director,Director) => Boolean = {
-      if(ascending)
-        (d1:Director,d2:Director) => d1.yearOfBirth < d2.yearOfBirth
+    val comparator: (Director, Director) => Boolean = {
+      if (ascending)
+        (d1: Director, d2: Director) => d1.yearOfBirth < d2.yearOfBirth
       else
-        (d1:Director,d2:Director) => d1.yearOfBirth > d2.yearOfBirth
+        (d1: Director, d2: Director) => d1.yearOfBirth > d2.yearOfBirth
     }
     val order = directors.sortWith(comparator)
     println(order)
+    println("==========================================================================================")
+
+    val nolanFilms = nolan.films.map(f => f.name)
+    println(nolanFilms)
+    println("==========================================================================================")
+
+    val directorFilms = directors.flatMap(d => d.films.map(film => film.name))
+    println(directorFilms)
+    println("==========================================================================================")
+
+    val earlierFilmMac = mcTiernan.films.foldLeft(9999999)((current, film2) => math.min(current, film2.yearOfRelease))
+    println(earlierFilmMac)
+    println("==========================================================================================")
+
+
+    val decendingImdRating = directors.flatMap(d => d.films.sortWith((film1, film2) => film1.imdbRating > film2.imdbRating))
+    println(decendingImdRating)
+    println("==========================================================================================")
+
+    val value = directors.flatMap(director => director.films.map(film => film.imdbRating))
+
+    //    value.fold(0)((rating1, rating2) => rating1 + rating2)
+
+    val average = value.foldLeft(0.0)((total, rating) => total + rating) / value.length
+    println(average)
+    println("==========================================================================================")
+
+    directors
+      .foreach(director =>
+        director.films
+          .foreach(film => println(s"Tonight Only ! ${film.name} By ${director.firstName} ${director.lastName}")))
+    println("==========================================================================================")
+
+    val earlierFilmYear = directors.flatMap(director => director.films)
+      .foldLeft(99999)((result, film) => Integer.min(result, film.yearOfRelease))
+    println(earlierFilmYear)
+    println("==========================================================================================")
+
+    val list = Seq(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    println(minimum(list))
+    println("==========================================================================================")
+
+    val duplicate = Seq(1, 2, 3, 4, 5, 6, 1, 23, 4, 5)
+    val uniqueSeq = unique(duplicate)
+    println(uniqueSeq)
+    println("==========================================================================================")
+
+    val revSeq = reverse(list)
+    println(revSeq)
+    println("==========================================================================================")
+
+    val stringList = map[Int, String](list, x => "String " + x.toString)
+    println(stringList)
+    println("==========================================================================================")
   }
 
+  def minimum(seq: Seq[Int]): Int = {
+    seq.foldLeft(Int.MaxValue)((result, element) => Integer.min(result, element))
+  }
+
+  def unique(seq: Seq[Int]): Seq[Int] = {
+    def insert(sequence: Seq[Int], ele: Int): Seq[Int] = {
+      if (!sequence.contains(ele)) {
+        sequence :+ ele
+      } else {
+        sequence
+      }
+    }
+
+    seq.foldLeft(Seq.empty[Int])((uniqueSeq, element) => insert(uniqueSeq, element))
+  }
+
+  def reverse[A](seq: Seq[A]): Seq[A] = {
+    def insert(sequence: Seq[A], ele: A): Seq[A] = {
+      ele +: sequence
+    }
+
+    seq.foldLeft(Seq.empty[A]) {
+      (reverseSeq, element) => insert(reverseSeq, element)
+    }
+  }
+
+  def map[A, B](seq: Seq[A], f: A => B): Seq[B] = {
+    seq.foldRight(Seq.empty[B])((element, transformedSeq) => {
+      f(element) +: transformedSeq
+    })
+  }
+
+  def foldLeft1[A, B](seq: Seq[A], zero: B, fn: (B, A) => B): B = {
+    var result: B = zero
+
+    seq.foreach(element => {
+      result = fn(result, element)
+    })
+    result
+  }
 
 }

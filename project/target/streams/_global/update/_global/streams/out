@@ -1,3 +1,3 @@
-[debug] "not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/D:/workspace/EssentialScala/project/"), "essentialscala-build")...
-[debug] Done updating ProjectRef(uri("file:/D:/workspace/EssentialScala/project/"), "essentialscala-build")
+[debug] "not up to date. inChanged = false, force = false
+[debug] Updating ProjectRef(uri("file:/C:/h2ctq3a/workspace/playground/Scala-Essentials/project/"), "scala-essentials-build")...
+[debug] Done updating ProjectRef(uri("file:/C:/h2ctq3a/workspace/playground/Scala-Essentials/project/"), "scala-essentials-build")

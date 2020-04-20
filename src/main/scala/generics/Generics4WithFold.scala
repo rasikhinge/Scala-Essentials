@@ -18,7 +18,6 @@ object Generics4WithFold {
   def main(args: Array[String]): Unit = {
     val list1 = Pair2(1, Pair2(2, Pair2(3, End2())))
     val list2 = Pair2("A", Pair2("AB", Pair2("ABC", End2())))
-
     println(list2.fold[Int](0, (x: String, y: Int) => x.length + y)) // length of string
     println(list2.fold[Boolean](true, (x: String, y: Boolean) => x.contains("D") && y)) // contains of string
   }

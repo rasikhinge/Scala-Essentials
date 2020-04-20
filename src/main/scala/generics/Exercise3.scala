@@ -22,5 +22,7 @@ object Exercise3 {
     println(maybe2)
     println(maybe1.fold("No Value", x => s"has value $x"))
     println(maybe2.fold("No Value", x => s"has value $x"))
+
   }
+
 }
