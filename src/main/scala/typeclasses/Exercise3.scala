@@ -1,6 +1,16 @@
 package typeclasses
 
-import typeclasses.implicits.NameAndEmailImplicit._
+import typeclasses.ExtenionEqual.EqualExtension
+import typeclasses.implicits.CaseInsensitiveNameComparer._
+
+object ExtenionEqual {
+  implicit class EqualExtension[A](value1: A) {
+    def ===(value2: A)(implicit comparer: Equal[A]): Boolean = {
+      comparer.equal(value1, value2)
+    }
+  }
+
+}
 
 trait Equal[A] {
   def equal(val1: A, val2: A): Boolean
@@ -23,8 +33,15 @@ case class Person(name: String, email: String)
 object Exercise3 {
   def main(args: Array[String]): Unit = {
     println(Eq(Person("ABC", "abc@gmail.com"), Person("ABC", "abc@gmail.com")))
+    println("================================================")
     println(Eq(Person("ABC", "abc1@gmail.com"), Person("ABC", "abc@gmail.com")))
+    println("================================================")
 
     Equal[Person].equal(Person("XYZ", "xyz@gmail.com"), Person("XYZ", "xyz@gmail.com"))
+
+    val value = Person("ABC","abc@gmail.com").===(Person("abc","@gmail.com"))
+    println("===============================================")
+    println(value)
+    println("================================================")
   }
 }
